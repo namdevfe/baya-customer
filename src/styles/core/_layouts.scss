@@ -1,0 +1,44 @@
+html {
+  font-size: 62.5%;
+
+  @include sm {
+    font-size: 57.5%;
+  }
+
+  @include xs {
+    font-size: 62.5%;
+  }
+}
+
+body {
+  max-width: var(--max-w-page);
+  margin: 0 auto;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+
+  &.--disable-scroll {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .container {
+    position: relative;
+    max-width: var(--max-w-container);
+    padding-left: var(--p-container);
+    padding-right: var(--p-container);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container-fluid {
+    position: relative;
+    width: 100%;
+    max-width: var(--max-w-container-fluid);
+    padding-left: var(--p-container);
+    padding-right: var(--p-container);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
