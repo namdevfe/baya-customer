@@ -15,7 +15,9 @@ body {
   margin: 0 auto;
   color: var(--text-color);
   background-color: var(--bg-color);
+  font-family: var(--font-quicksan);
   font-size: var(--fs-body);
+  font-weight: 400;
   line-height: var(--lh-body);
 
   &.--disable-scroll {
