@@ -1,0 +1,120 @@
+@import '../../../styles/core/mixins';
+
+.header {
+  height: var(--h-header);
+  padding: 20px 0;
+  background-color: var(--primary-color);
+
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: flex;
+  }
+
+  &__middle {
+    position: relative;
+
+    &-search {
+      display: flex;
+      gap: 30px;
+      min-width: 680px;
+      height: 40px;
+      width: 100%;
+      padding: 10px 50px 10px 15px;
+      overflow: hidden;
+      border-radius: 4px;
+      background-color: var(--white-color);
+
+      input {
+        height: 100%;
+        width: 100%;
+
+        outline: none;
+        font-family: var(--font-quicksan);
+        color: var(--text-color);
+
+        &::placeholder {
+          font-family: var(--font-quicksan);
+          color: var(--text-color);
+          opacity: 0.8;
+        }
+      }
+
+      .btn-search {
+        position: absolute;
+        right: 3px;
+        top: 4px;
+        bottom: 4px;
+        height: 32px;
+      }
+    }
+
+    &-services {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-top: 12px;
+
+      .item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        p {
+          color: var(--white-color);
+          font-size: var(--fs-small);
+          line-height: var(--lh-small);
+        }
+
+        &__icon {
+          @include size(25px, 20px);
+        }
+      }
+    }
+  }
+
+  &__cta {
+    display: flex;
+    align-items: center;
+    // gap: 26px;
+
+    &-item {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 13px;
+
+      p {
+        color: var(--white-color);
+        font-size: var(--fs-13);
+        line-height: var(--lh-18);
+      }
+
+      // Divider
+      &:first-child::after,
+      &:first-child::before {
+        position: absolute;
+        top: 50%;
+        content: '';
+        display: block;
+        @include size(1px, 40px);
+        @include transform(translateY(-50%));
+        background-color: var(--white-color);
+      }
+
+      &:first-child::before {
+        left: 0;
+      }
+
+      &:first-child::after {
+        right: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+@import '../../../styles/core/mixins';
+
+.icon {
+  color: var(--white-color);
+  @include size(24px, 24px);
+}

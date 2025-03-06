@@ -1,0 +1,6 @@
+export { default as SearchIcon } from './search-icon'
+export { default as TruckIcon } from './truck-icon'
+export { default as HomeIcon } from './home-icon'
+export { default as PhoneIcon } from './phone-icon'
+export { default as UserIcon } from './user-icon'
+export { default as CartIcon } from './cart-icon'

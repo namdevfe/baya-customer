@@ -1,11 +1,13 @@
 import type { Metadata } from 'next'
 import { Quicksand } from 'next/font/google'
 import '@/styles/globals.scss'
+import { Header } from '@/shared/layouts'
 
 const quicksan = Quicksand({
   subsets: ['latin'],
-  weight: ['400', '500', '700'],
-  variable: '--font-quicksan'
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-quicksan',
+  display: 'fallback'
 })
 
 export const metadata: Metadata = {
@@ -20,7 +22,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${quicksan.variable}`}>{children}</body>
+      <body className={`${quicksan.variable}`}>
+        <Header />
+        {children}
+      </body>
     </html>
   )
 }

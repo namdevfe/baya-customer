@@ -1,0 +1,32 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  border-radius: 4px;
+  color: var(--white-color);
+  font-weight: 600;
+  cursor: pointer;
+
+  // Color
+  &.btn--primary {
+    background-color: var(--primary-color);
+  }
+
+  &.btn--white {
+    background-color: var(--white-color);
+  }
+
+  // Size
+  &.btn--lg {
+    padding: var(--py-button-lg) var(--px-button-lg);
+  }
+
+  &.btn--md {
+    padding: var(--py-button-md) var(--px-button-md);
+  }
+
+  &.btn--sm {
+    padding: var(--py-button-sm) var(--px-button-sm);
+  }
+}

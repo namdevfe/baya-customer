@@ -1,8 +1,8 @@
 :root {
   --text-color: #252a2b;
-  --primary-color: #c31425;
+  --primary-color: #c4123f;
   --bg-color: #f7f7f7;
-  --text-primary-color: #c4123f;
+  --white-color: #ffffff;
 
   // Setting page
   --max-w-page: 2560px;
@@ -12,19 +12,38 @@
   --gap: 26px;
   --max-w-container: calc(var(--w-container) + var(--p-container) * 2);
 
+  --h-header: 102px;
+
   // Typography
   --fs-body: 1.4rem;
   --lh-body: 1.45;
+
+  --fs-small: 1.2rem;
+  --lh-small: 1.74rem;
+
+  --fs-13: 1.3rem;
+  --lh-18: 1.8rem;
+
+  // Button
+  // Large
+  --py-button-lg: 12px;
+  --px-button-lg: 20px;
+  // Medium
+  --py-button-md: 10px;
+  --px-button-md: 24px;
+  // Small
+  --py-button-sm: 8px;
+  --px-button-sm: 16px;
 
   @include md {
     --w-container: 1140px;
   }
 
-  @include xs {
+  @include sm {
     --w-container: 960px;
   }
 
-  @include sm {
+  @include xs {
     --w-container: 100%;
     --p-container: 16px;
     --gap: 16px;
