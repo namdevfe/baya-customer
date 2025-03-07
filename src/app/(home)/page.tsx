@@ -1,6 +1,6 @@
 const Home = () => {
   return (
-    <main style={{ marginTop: 50 }}>
+    <main style={{ height: 'calc(100vh - 108px)' }}>
       <div className='container'>Homepahe</div>
     </main>
   )

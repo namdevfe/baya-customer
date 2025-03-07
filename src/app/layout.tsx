@@ -11,7 +11,7 @@ const quicksan = Quicksand({
 })
 
 export const metadata: Metadata = {
-  title: 'Baya Ecommerce',
+  title: 'Siêu thị nội thất & trang trí Baya',
   description: 'Built by Namdev'
 }
 

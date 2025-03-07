@@ -3,6 +3,7 @@
   --primary-color: #c4123f;
   --bg-color: #f7f7f7;
   --white-color: #ffffff;
+  --red-color: #ff0000;
 
   // Setting page
   --max-w-page: 2560px;
@@ -24,6 +25,9 @@
   --fs-13: 1.3rem;
   --lh-18: 1.8rem;
 
+  --lh-15: 1.5rem;
+  --lh-20: 2rem;
+
   // Button
   // Large
   --py-button-lg: 12px;
@@ -34,6 +38,9 @@
   // Small
   --py-button-sm: 8px;
   --px-button-sm: 16px;
+
+  // Transition
+  --transition-duration: 1s;
 
   @include md {
     --w-container: 1140px;

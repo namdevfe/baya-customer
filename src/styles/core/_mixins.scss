@@ -178,7 +178,7 @@
 
 // ------------------------------ Middle Object -----------------------------------
 @mixin mid($flex: false) {
-  @if $flex ==false {
+  @if $flex == false {
     position: absolute;
     top: 50%;
     left: 50%;

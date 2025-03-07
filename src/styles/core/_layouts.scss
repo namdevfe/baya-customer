@@ -26,7 +26,6 @@ body {
   }
 
   .container {
-    position: relative;
     max-width: var(--max-w-container);
     padding-left: var(--p-container);
     padding-right: var(--p-container);
@@ -35,7 +34,6 @@ body {
   }
 
   .container-fluid {
-    position: relative;
     width: 100%;
     max-width: var(--max-w-container-fluid);
     padding-left: var(--p-container);

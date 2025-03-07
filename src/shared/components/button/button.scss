@@ -1,20 +1,24 @@
+@import '../../../styles/core/mixins';
+
 .btn {
   display: flex;
   align-items: center;
   justify-content: center;
   width: fit-content;
   border-radius: 4px;
-  color: var(--white-color);
   font-weight: 600;
   cursor: pointer;
+  @include transition(all var(--transition-duration));
 
   // Color
   &.btn--primary {
     background-color: var(--primary-color);
+    color: var(--white-color);
   }
 
   &.btn--white {
     background-color: var(--white-color);
+    color: var(--text-color);
   }
 
   // Size
